@@ -7,6 +7,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title class="dashboard-name">National Parks across the USA</title>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <!-- D3 Library -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+<!-- 
+  Leaflet JavaScript code -->
+  <!-- <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+  integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+  crossorigin=""></script> -->
+
 
 <!-- Our CSS -->
 <!-- <link rel="stylesheet" type ="text/css" href="static/css/style.css"/> -->
@@ -46,19 +58,21 @@
   height:225px;
   width: 100%;
 }
-
-#map{
-  height: 40%;
-  width: 40%;
-  position: relative;
+#html, #body, #map-container {
+    height: 100%;
 }
 
-  
+#map{
+  height: 100%;
+  position: center;
+}
+
 </style>
   
 </head>
 
 <body>
+
   <div class = image>
     <img src="Pics/park.jpg" alt="national park" id="image">
   </div>
@@ -67,15 +81,24 @@
     <h3 class="overview">"I need to be outside. I need to be in the world and to remember that I am of it."</h3>
     <h3 class="author">John Green</h3>
  </div>
- <!-- The div where we'll insert our map -->
- <div id="map"></div>
+
+ <!-- The div where we'll insert our map  -->
+
+ <div id="map" style="width: 1000px; height: 600px; top: 50px; left: 50px"></div>
+
+
 
  <!-- JavaScript file -->
- <script type="text/javascript" src="logic.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
+ <script type="text/javascript" src="./static/js/logic.js"></script>
+  <!-- <script src="./static/js/logic-map.js"></script> -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <!-- <script src="./static/js/logic.js"></script> -->
-  
+  <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+  integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+  crossorigin=""></script>
+
+
 </body>
 
 </html>
