@@ -9,7 +9,6 @@ d3.json(queryURL).then(function(data) {
 });
 
 function createFeatures(parkData) {
-
   // Define a function that we want to run once for each feature in the features array.
   // Give each feature a popup that describes the place and time of the earthquake.
   function onEachFeature(feature, layer) {
@@ -18,7 +17,17 @@ function createFeatures(parkData) {
 
   // Create a GeoJSON layer that contains the features array on the earthquakeData object.
   // Run the onEachFeature function once for each piece of data in the array.
+
+  var greenMarker = L.AwesomeMarkers.icon({
+      html: '<span class="glyphicon glyphicon-leaf"></span></p>', 
+      iconColor: 'white',
+      markerColor: 'green'
+    });
+        
   var parks = L.geoJSON(parkData, {
+    pointToLayer: function(feature, latlng) {
+      return L.marker(latlng, {icon: greenMarker});
+    },
     onEachFeature: onEachFeature
   });
 
@@ -28,30 +37,20 @@ function createFeatures(parkData) {
 
 function createMap(parks) {
 
-  // // Create the base layers.
-  // var Stamen_Watercolor = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
-  //   attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  //   subdomains: 'abcd',
-  //   minZoom: 1,
-  //   maxZoom: 16,
-  //   ext: 'jpg'
-  // });
-
-
   var map = L.map('map').setView([39.0997, -94.578331], 12);
   var street = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-	maxZoom: 4,
+	// maxZoom: 4,
 	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
 }).addTo(map);
 
   // Create a baseMaps object.
   var baseMaps = {
-    "Street Map": street 
+    "World map": street 
   };
 
   // Create an overlay object to hold our overlay.
   var overlayMaps = {
-    Parks: parks
+    NationalParks: parks
   };
 
 
@@ -61,6 +60,5 @@ function createMap(parks) {
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(map);
-
-// 
+   
 }
