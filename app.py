@@ -31,7 +31,18 @@ app = Flask(__name__)
 
 
 # 3. Define what to do when a user hits the index route
+
 @app.route("/")
+def welcome():
+    """List all available api routes."""
+    return (
+        f"Here's the Available Routes:<br/>"
+        f"/api/v1.0/np-visitation<br/>"
+        f"/api/v1.0/np-geojson<br/>"
+    )
+
+@app.route("/np-visitation")
+@cross_origin() # allow all origins all methods.
 def home():
     # Create our session (link) from Python to the DB
     session = Session(engine)
