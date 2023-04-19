@@ -20,7 +20,7 @@ PostgreSQL 12 https://www.postgresql.org/
 
 ### JavaScript
  - D3 Library https://d3js.org/
- - Leaflet https://leafletjs.com/index.html & Leaflet plugin Awesome-markers https://github.com/lennardv2/Leaflet.awesome-markers
+ - Leaflet https://leafletjs.com/index.html & Leaflet plugin ExtraMarkers https://github.com/coryasilva/Leaflet.ExtraMarkers
 
 ## Teammates 
  - Julie Eremeeva
