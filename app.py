@@ -47,7 +47,7 @@ def home():
     # Create our session (link) from Python to the DB
     session = Session(engine)
 
-    # Perform a query to retrieve the data and precipitation scores
+    # Perform a query to retrieve the park data.
     results = session.query(Visitation).all()
     session.close()
     
