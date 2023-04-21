@@ -28,9 +28,14 @@ PostgreSQL 12 https://www.postgresql.org/
  - Elizabeth Hansen 
 
 ## Objective
-&rarr; Create a dashboard that accumulates data on the US National Parks to make it easier for campers to choose a park to visit.
+&rarr; To create a dashboard with various information on the US National Parks for visitors, including visitation statistics, location, activities available, water/air quality, and entrance fee cost. The dashboard should be intuitive and easy to use for anyone interested. ​
 
 ## Data resources 
  - NPS Stats https://irma.nps.gov/Stats/Reports/National
  - NPS Data API https://www.nps.gov/subjects/digital/nps-data-api.htm
+ 
+ ## Challenges
+ - Inconsistent data across several endpoints (geojson/csv). We had to make 2 API calls within one script to get information we needed. ​
+ - We faced issues while working with National Park Services API (couldn't filter the data) - see the jupyter notebook file. 
+
 
