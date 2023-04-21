@@ -1,7 +1,8 @@
 # Dashboard: National Parks across the USA 
 
-The link to the Dashboard: https://hi8julie.github.io/project-3/
-The link to the Flask App: https://national-parks.onrender.com/
+- The link to the Dashboard: https://hi8julie.github.io/project-3/
+
+- The link to the Flask App: https://national-parks.onrender.com/
 
 ![shutterstock_404137699](https://user-images.githubusercontent.com/118202453/230911730-8851be6f-171f-45bc-8ece-4206def9411c.jpg)
 
