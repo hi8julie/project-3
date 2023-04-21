@@ -1,5 +1,8 @@
 # Dashboard: National Parks across the USA 
 
+The link to the Dashboard: https://hi8julie.github.io/project-3/
+The link to the Flask App: https://national-parks.onrender.com/
+
 ![shutterstock_404137699](https://user-images.githubusercontent.com/118202453/230911730-8851be6f-171f-45bc-8ece-4206def9411c.jpg)
 
 ## Dependencies 
@@ -37,5 +40,8 @@ PostgreSQL 12 https://www.postgresql.org/
  ## Challenges
  - Inconsistent data across several endpoints (geojson/csv). We had to make 2 API calls within one script to get information we needed. ​
  - We faced issues while working with National Park Services API (couldn't filter the data). 
+
+## Preview 
+<img width="670" alt="parks-dashboard" src="https://user-images.githubusercontent.com/118202453/233524937-fee0d4e7-6fff-440a-a488-61614f42c68b.PNG">
 
 
