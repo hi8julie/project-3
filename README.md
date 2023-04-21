@@ -36,6 +36,6 @@ PostgreSQL 12 https://www.postgresql.org/
  
  ## Challenges
  - Inconsistent data across several endpoints (geojson/csv). We had to make 2 API calls within one script to get information we needed. ​
- - We faced issues while working with National Park Services API (couldn't filter the data) - see the jupyter notebook file. 
+ - We faced issues while working with National Park Services API (couldn't filter the data). 
 
 
