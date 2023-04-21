@@ -1,22 +1,88 @@
-div {
+body {
+  background-color: #F0F8FF;
+}
+.title{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #A4C100;
+  font-weight: bold;
   padding: 100;
   margin: 100;
   align-items: center;
-  color: "green"
+  background-color: #072E74;
+  height: 150px;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.overview{
+color: #FFF8D8;;
+
+}
+.author{
+color: #FFF8D8;
+text-align: right;
+}
+#html, #body, #map-container {
+  height: 100%;
 }
 
-/* .text-center{
-  padding: 100;
-  margin: 100;
-  align-items: center;
-  color: "green"
-} */
-/* .dashboard-name {
-  color: "pink",
-  align-items: center;
-} */
-/* 
-div {
-  align-items: center;
-  color: "green";
-} */
+ion-icon {
+font-size: 64px;
+color: green;
+}
+
+#dropdown {
+  margin: 10px;
+  background-color: #072E74;
+  width: 30%;
+}
+.dropdown-name{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+  color: #FFF8D8;
+  margin: 10px;
+
+}
+#selDataset {
+  font-weight: bold;
+  font-size: large;
+  margin: 10px;
+}
+
+#bar {
+  width: 50%;
+}
+#map {
+  height: 100%;
+  float: center;
+  margin: 50px;
+  } 
+
+  #park-metadata, #panel {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    margin: 10px;
+    width: 30%;
+    background-color: white;
+  }
+  .float-container {
+    padding: 5px;
+  }
+  #panel {
+    border-style: solid;
+    border-color: #A4C100;
+    float: left;
+  }
+  .bar-chart {
+    padding: 5px;
+    float: left;
+  }
+  #panel-title {
+    color:black;
+    background-color: #A4C100;
+  }
+ #bar, #bar-2 {
+  float: left;
+ }
